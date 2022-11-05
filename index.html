@@ -13,7 +13,40 @@
 		}
 		.ans{
 			text-align: center;
-		}
+			
+    		background: none;
+    		padding: 10px 20px;
+    		font-size: 20px;
+    		font-family: "montserrat";
+    		margin: 10px;
+    		transition: 0.8s;
+    		position: relative;
+    		overflow: hidden;
+			}
+			.ans::before{
+    		border-radius: 0 0 50% 50%;
+    	top: 0
+  }
+ 		 	.ans:before{
+			height: 180%;
+ 			 }
+
+			  .ans::before{
+    		content: "";
+    		position: absolute;
+    		left: 0;
+    		width: 100%;
+    		height: 0%;
+    		background: #3498db;
+    		z-index: -1;
+    		transition: 0.8s;
+  			}
+			  .two{
+    background-color: #3498db;
+  }
+  .two{
+	color:beige;
+  }
 	</style>
 	<body>
 		<form>
@@ -23,8 +56,7 @@
 		</div>
 		<p> </p>
 		<div class="ans">
-
-			<button type="button" onclick="getInfo()">Click Me</button></div>
+			<button class="ans two" onclick="getInfo()" style="border: 1px solid #3498db;">Click Me</button></div>
 		</form>
 
 		<script src="js/main.js"></script>
