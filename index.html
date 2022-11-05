@@ -47,6 +47,47 @@
   .two{
 	color:beige;
   }
+  .rightbutton{
+			text-align: center;
+			border: 0;
+    		background: none;
+    		padding: 10px 10px;
+    		font-size: 20px;
+    		font-family: "montserrat";
+    		margin: 10px;
+    		transition: 0.8s;
+    		position: relative;
+    		overflow: hidden;
+			}
+			.rightbutton::before{
+    		border-radius: 0 0 50% 50%;
+    	top: 0
+  }
+ 		 	.rightbutton:before{
+			height: 100%;
+ 			 }
+
+			  .ans::before{
+    		content: "";
+    		position: absolute;
+    		left: 0;
+    		width: 50%;
+    		height: 0%;
+    		background: #3498db;
+    		z-index: -1;
+    		transition: 0.8s;
+  			}
+			  .rightbutton{
+    background-color: #3498db;
+  }
+  .rightbutton{
+	color:beige;
+  }
+  .rightbutton{
+  position: absolute;
+left: 100;
+top: 100;  
+}
 	</style>
 	<body>
 		<form>
@@ -56,9 +97,10 @@
 		</div>
 		<p> </p>
 		<div class="ans">
-			<button class="ans two" onclick="getInfo()" style="border: 1px solid #3498db;">Click Me</button></div>
+			<button class="ans two" style="border: 1px solid #3498db;" onclick="getInfo()">Click Me</button></div>
 		</form>
-
-		<script src="js/main.js"></script>
+		<a href="main.html">
+			<button class="rightbutton">Go back</button></a>
+		<script src="main.js"></script>
 	</body>
 </html>
