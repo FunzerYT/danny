@@ -7,6 +7,38 @@
   </head>
   <body>
 <style>
+  body {
+	animation-name: backgroundColorPalette;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+        @keyframes backgroundColorPalette {
+	      0% {
+		background: #2ec9b4;
+	    }
+	      25% {
+		background: #80d8e7;
+	    }
+	    50% {
+		background: #7eadbb;
+	    }   
+	    75% {
+		background: #50aebe;
+	    }
+	    100% {
+		background: #88b8f0;
+	    }
+}
+
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
   h1{
     color: tan;
   }
@@ -32,6 +64,7 @@
 
     
 </style>
+<div id="myDIV"></div>
 <h1 style="font-size: 24pt" class="text-center" class="h1">Danny's Directory</h1>
 
 
@@ -44,7 +77,7 @@
     <button class="btn btn5">Office 365</button></a>
     <a href="https://seattleschools.org" target="_blank">
     <button class="btn btn6">SPS</button></a>
-    <a href="super.html">
+    <a href="index.html">
       <button class="hid" style="float: right;" style="cursor: pointer;"></button></a>
 </div>
 
